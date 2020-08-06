@@ -1,0 +1,21 @@
+{
+  "name": "Twilio IVR Debugger",
+  "description": "Call logs require too much drill down to debug/test your new IVR. This extension displays data more succinctly.",
+  "version": "0.7.2",
+  "permissions": [
+     "https://*.twilio.com/console/voice/calls/logs/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.twilio.com/console/voice/calls/logs/*"],
+      "js": ["jquery-1.9.1.min.js", "highlight.min.js", "script.js" ]
+    }
+  ],
+  "browser_action": {
+      "default_title": "Twilio IVR Debugger",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+
+  },
+  "manifest_version": 2
+}
