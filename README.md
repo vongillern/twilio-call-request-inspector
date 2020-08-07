@@ -8,7 +8,7 @@ Are you writing an IVR with Twilio? Awesome! Twilio is an amazeballs service, an
 - It shortens guids in the path. They're too damn long and you know it. 
 - It makes SpeechResults, Confidence, and Digits first class citizens with their own columns for each row
 - Want to see the response? Click on the path
-- In the response, we hide <?xml...>, &lt;Response>, and &lt/Response>. These are redundant. We know it is xml. We know it is a response. I don't need to see it
+- In the response, we hide &lt;?xml...&gt;, &lt;Response&gt;, and &lt;/Response&gt;. These are redundant. We know it is xml. We know it is a response. I don't need to see it
 
 <h4>What is annoying with current twilio request inspector</h4>
 
